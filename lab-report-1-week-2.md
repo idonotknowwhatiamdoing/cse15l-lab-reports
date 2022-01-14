@@ -24,17 +24,17 @@
 
 3. Trying Some Commands
     * Once you are logged in, you can try some of the commands below:
-        * cd - change directory
-        * ls - list files
-        * pwd - print working directory
-        * mkdir - make directory
-        * cp - copy
-        * exit - log out
-            * (ctrl-d also works)
+        * `cd` - change directory
+        * `ls` - list files
+        * `pwd` - print working directory
+        * `mkdir` - make directory
+        * `cp` - copy
+        * `exit` (or ctrl-d) - log out
+
         * Here are some sample commands in my terminal: 
         ![Image4](commands.png)           
 
-4. Moving Files with scp
+4. Moving Files with `scp`
 
 5. Setting an SSH Key
 
