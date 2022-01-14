@@ -35,6 +35,15 @@
         ![Image4](commands.png)           
 
 4. Moving Files with `scp`
+    * `scp` - secure copy protocol
+        * A useful command that allows us to copy files from the server (ieng6) to the client (our computer).
+        * This command can only be used on the client side (your own computer).
+    * Try it out by copying the following command into your terminal, replacing the first blank with your file name, and the second blank with your course-specific username.
+        ```
+        $ scp ______ cs15lwi22______@ieng6.ucsd.edu:~/
+        ```
+    * Now, when you log onto the ieng6 server again, you should see your file listed: ![Image5](scpfile.png) 
+        * The file I copied was named `WhereAmI.java`.
 
 5. Setting an SSH Key
 
