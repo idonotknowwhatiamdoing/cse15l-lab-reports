@@ -74,7 +74,5 @@
         * As seen below, now we don't need a password to log into the server anymore! ![Image6](sshkey.png)
 
 6. Optimizing Remote Running
-    * You can run server commands from the client by putting the command in quotes after an ssh. After it gets executed, you stay on the client:
-    ![Image7](remoteexit.png)
-    * Separate commands with semicolons to run multiple at once:
-    ![Image8](manycommand.png)
+    * You can run server commands from the client by putting the command in quotes after an ssh. After it gets executed, you stay on the client: ![Image7](remoteexit.png)
+    * Separate commands with semicolons to run multiple at once: ![Image8](manycommand.png)
