@@ -46,5 +46,31 @@
         * The file I copied was named `WhereAmI.java`.
 
 5. Setting an SSH Key
+    * Typing in a password every time you want to `scp` or login is kind of annoying. We can bypass this step by setting an **SSH Key**.
+    * By generating a set of keys, one to store on our local computer (private key) and one to store on the server (public key)
+    * After you set up the keys, the `ssh` command will use the two keys in place of your password.
+
+    * Generate the SSH Key: make sure you are on the client!
+    ```
+    $ ssh-keygen
+    ```
+    * You will then be prompted to save the private key to your computer. You can just copy the default path in the parentheses. 
+
+    * Windows requires an extra step.
+        * Open Powershell and run as administrator. Start the service using 
+        ```
+        $ Start-Service ssh-agent
+        ```
+        * Make sure your ssh is running 
+        ```
+        $ Get-Service ssh-agent
+        ```
+        * Load your key files into ssh-agent, replacing the blank space with the file in the .ssh directory that you saved the private key into.
+            * If you used the default path, you would type `id_rsa` in the blank.
+        ```
+        $ ssh-add ~\.ssh\______
+        ```
+        * Finally, `scp` your public key into the .ssh directory on ieng6. 
+        * As seen below, now we don't need a password to log into the server anymore! ![Image6](sshkey.png)
 
 6. Optimizing Remote Running
