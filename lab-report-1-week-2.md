@@ -3,7 +3,7 @@
 1. Installing VSCode (for Windows)
     * Go to the [VSCode website](https://code.visualstudio.com/) and follow the download instructions.
     * Once download is complete, open VSCode. The screen should look something like this: ![Image1](vschomescreen.png)
-
+---
 2. Remotely Connecting
     * Download [OpenSSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
         * Check if **OpenSSH Client** and **OpenSSH Server** are installed by going to  
@@ -21,7 +21,7 @@
         * Your password will be hidden for confidentiality. This is normal!
     * Now, you are connected to the ieng6 server. You should be notified if you logged in successfully with a similar message: ![Image3](successfullogin.png)
         * If the terminal keeps prompting you for your password, make sure you entered it correctly.
-
+---
 3. Trying Some Commands
     * Once you are logged in, you can try some of the commands below:
         * `cd` - change directory
@@ -33,7 +33,7 @@
 
         * Here are some sample commands in my terminal: 
         ![Image4](commands.png)           
-
+---
 4. Moving Files with `scp`
     * `scp` - secure copy protocol
         * A useful command that allows us to copy files from the server (ieng6) to the client (our computer).
@@ -44,7 +44,7 @@
         ```
     * Now, when you log onto the ieng6 server again, you should see your file listed: ![Image5](scpfile.png) 
         * The file I copied was named `WhereAmI.java`.
-
+---
 5. Setting an SSH Key
     * Typing in a password every time you want to `scp` or login is kind of annoying. We can bypass this step by setting an **SSH Key**.
     * By generating a set of keys, one to store on our local computer (private key) and one to store on the server (public key)
@@ -72,7 +72,7 @@
         ```
         * Finally, `scp` your public key into the .ssh directory on ieng6. 
         * As seen below, now we don't need a password to log into the server anymore! ![Image6](sshkey.png)
-
+---
 6. Optimizing Remote Running
     * You can run server commands from the client by putting the command in quotes after an ssh. After it gets executed, you stay on the client.
     ![Image7](remoteexit.png)
