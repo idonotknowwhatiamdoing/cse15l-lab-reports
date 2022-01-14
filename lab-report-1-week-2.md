@@ -6,7 +6,12 @@
 
 2. Remotely Connecting
     * Download [OpenSSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
+        * Check if **OpenSSH Client** and **OpenSSH Server** are installed by going to  
+            > Settings > Apps > Apps & Features > Optional Features
+        * If not, select **Add a feature** and install both.
+        * Once installation finishes, they should both show up in **Optional Features**.
     * Search for your course-specific account in the [Account Lookup](https://sdacs.ucsd.edu/~icc/index.php)
+        * Make sure you [reset the password](https://password.ucsd.edu/).
     * Open a new terminal ![Image2](newterminal.png)
     * Enter the following command, writing your course specific account in the blank.
         ```
