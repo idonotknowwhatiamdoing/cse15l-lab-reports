@@ -21,7 +21,7 @@
 ```
 
 ### Summary:
-Because the index for the square brackets ```[``` and ```]``` could not be found, the index variable returned ```-1``` in an infinite loop.
+Instead of a properly formatted link with square brackets and parentheses, the failure-inducing input only had a set of parentheses. Because the index for the square brackets ```[``` and ```]``` could not be found, the index variable returned ```-1``` in an infinite loop.
 
 ## Code Change 2: 
 
