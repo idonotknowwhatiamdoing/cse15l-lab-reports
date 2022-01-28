@@ -13,15 +13,11 @@
 ### Symptom: 
 ```
 -1
--1
--1
--1
--1
--1
+[link]
 ```
 
 ### Summary:
-Instead of a properly formatted link with square brackets and parentheses, the failure-inducing input only had a set of parentheses. Because the index for the square brackets ```[``` and ```]``` could not be found, the index returned ```-1``` in an infinite loop. By checking for the existence of square brackets in the added ```if``` statement, we can solve this issue. 
+Instead of a properly formatted link with square brackets and parentheses, the failure-inducing input only had a set of parentheses. Because the index for the square bracket ```[``` could not be found, the index returned ```-1```. It also incorrectly interpreted the link inside the parentheses to be. By checking for the existence of square brackets in the added ```if``` statement, we can solve this issue. 
 
 ## Code Change 2: 
 
@@ -36,5 +32,6 @@ Instead of a properly formatted link with square brackets and parentheses, the f
 ```
 ### Symptom: 
 ```
-
+0
+[and some text (url.com]
 ```
