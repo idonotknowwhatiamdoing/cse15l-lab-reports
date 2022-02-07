@@ -11,10 +11,7 @@
 ```
 
 ### Symptom: 
-```
--1
-[link.com]
-```
+![symp1](symp1.png)
 
 ### Summary:
 Instead of a properly formatted link with square brackets and parentheses, the failure-inducing input only had a set of parentheses. Because the index for the square bracket ```[``` could not be found, the index returned ```-1```. The output should be a pair of empty brackets because the formatting was incorrect. By checking for the existence of square brackets in the added ```if``` statement, we can fix this issue. 
@@ -27,11 +24,11 @@ Instead of a properly formatted link with square brackets and parentheses, the f
 [link](link.com)
 ![image](image link)
 ```
+
 ### Symptom: 
-```
-[link.com, image link]
-```
+![symp2](symp2.png)
 ### Summary: 
+
 When images are included in the test file, MarkdownParse interprets them as links and includes them in the output list of links. The formatting is very similar to that of links, but we don't want them to be included. We can check for the ```!``` in front of the open bracket that tells us the next line is an image, and not include those lines in our output. 
 
 ## Code Change 3: 
@@ -44,8 +41,7 @@ When images are included in the test file, MarkdownParse interprets them as link
 [Here is a link] and some text (url.com)
 ```
 ### Symptom: 
-```
-[and some text (url.com]
-```
+![symp3](symp3.png)
+
 ### Summary:
 In our original code, we assumed that the formatting would always be correct and that the opening parenthesis ```(``` would always come after the closing bracket ```]```. When this is not true, the link is formatted incorrectly. In our solution, we check to see if the ```char``` directly after ```]``` is ```(```, and if not, we then ```break``` and print a set of empty brackets.
