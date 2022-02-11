@@ -2,6 +2,4 @@
 
 ## Streamlining ```ssh``` Configuration
 * Edit ```.ssh/config``` file in VSCode
-## Setup Github Access from ieng6
-
-## Copy whole directories with ```scp -r```
+![sshconfig](sshconfig.png)
