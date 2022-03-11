@@ -25,7 +25,6 @@ It seems both implementations were wrong. It seems that forward slashes and back
 ## Bug 2: ```567.md```
 ```
 [foo](not a link)
-
 [foo]: /url1
 ```
 My output:
